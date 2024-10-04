@@ -1,0 +1,14 @@
+@media (max-width: 480px) {
+  /* Estilos para telas de smartphones (largura até 480px) */
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .menu {
+    display: none; /* Esconder menu em telas pequenas */
+  }
+}
