@@ -1,10 +1,20 @@
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+
+import { useState, useEffect } from "react"
+import Header from "./components/Header"
 
 function App() {
 
-  return <BrowserRouter>
-    
-  </BrowserRouter>
+  
+  return (
+    <div className="container">
+      <Header />
+
+    </div>
+
+
+  )
+
+
     
   
 }

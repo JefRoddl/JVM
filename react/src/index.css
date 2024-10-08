@@ -2,13 +2,31 @@
   /* Estilos para telas de smartphones (largura até 480px) */
   body {
     font-size: 14px;
+    padding: 0;
+    margin: 0;
   }
 
   .container {
-    padding: 10px;
+    
   }
 
-  .menu {
-    display: none; /* Esconder menu em telas pequenas */
+  .header {
+    border: 1px solid red;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .menuIcon {
+    margin-left: auto;
+    margin-right: 10vw;
+    width: 15vw;
+    height: 7vh;
+  }
+
+  .logo {
+    margin-left: 5vw;
+    width: 18vw;
+    height: 10vh;
   }
 }
