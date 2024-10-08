@@ -11,10 +11,10 @@
   }
 
   .header {
-    border: 1px solid red;
     height: 12vh;
     display: flex;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .menuIcon {
@@ -28,5 +28,12 @@
     margin-left: 5vw;
     width: 18vw;
     height: 10vh;
+    max-height: 80px;
+  }
+
+  .sectionWords {
+    color: black;
+    font-size: 50px;
+    font-family: fantasy;
   }
 }
