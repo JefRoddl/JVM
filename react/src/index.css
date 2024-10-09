@@ -14,26 +14,36 @@
     height: 12vh;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Garante que o header seja posicionado corretamente */
+    background-color: rgba(255, 255, 255); /* Opcional: Adiciona um fundo semi-transparente */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra abaixo do header */
+    z-index: 1; /* Mantém o header acima do background */
+    border-radius: 0px 0px 25px 25px;
   }
 
   .menuIcon {
     margin-left: auto;
     margin-right: 10vw;
-    width: 15vw;
-    height: 7vh;
+    width: 14vw;
+    height: 6.5vh;
   }
 
   .logo {
     margin-left: 5vw;
     width: 18vw;
     height: 10vh;
-    max-height: 80px;
+    max-height: 75px;
   }
 
-  .sectionWords {
-    color: black;
-    font-size: 50px;
-    font-family: fantasy;
+  .divSection {
+    background-image: url("./assets/images/imagemFundo.jpg");
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    width: 100%; /* Certifica-se que a div ocupe a largura total */
+    height: 50vh; /* Define uma altura de 100% da altura da viewport */
+    margin-top: -20px; /* Sobe a divSection para ficar abaixo do header */
+    z-index: 0; /* Garante que a imagem de fundo fique atrás */
   }
+
 }
