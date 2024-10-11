@@ -78,19 +78,21 @@
     align-items: center; 
     text-align: center;          
     position: relative;
-    animation: slideIn 3s forwards; 
+    animation: slideIn 3s forwards;
+    width: 250px;
   }
 
   .imgIcone {
-    height: 6vh;
-    display: flex;
-    align-items: center;
+    height: 7vh;
   }
 
   .buttonSeta {
     background: transparent;
     border: none;
+    position: absolute;
+    display: flex;
+    margin-top: 3vw;
+    margin-left: 80%;
   }
-
 
 }
