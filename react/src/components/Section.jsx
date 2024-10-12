@@ -6,20 +6,23 @@ const Section = () => {
 
   const [isVisible, setIsVisible] = useState(true);
 
+  const [frase, setFrase] = useState("SEMPRE A SUA DISPOSIÇÃO")
+
   const handleChangeBackground = () => {
-    // Primeiro, esconde a imagem atual (fade out)
+    
     setIsVisible(false);
 
-    // Depois de 1.5s (tempo da transição), troca a imagem e faz o fade in
+    
     setTimeout(() => {
-      setBackGroundImage(!backGroundImage); // Alterna entre as imagens
-      setIsVisible(true); // Reaparece com a nova imagem
-    }, 1500); // Tempo da transição (1.5 segundos)
+      setBackGroundImage(!backGroundImage);
+      setFrase(backGroundImage ? "SEMPRE A SUA DISPOSIÇÃO" : "SERVIÇOS PERSONALIZADOS PARA SUA DEMANDA")
+      setIsVisible(true); 
+    }, 700); 
   };
 
   return (
     <div className={`${backGroundImage ? 'divSection2' : 'divSection'} ${!isVisible ? 'hidden' : ''}`}>
-      <h1 className='FraseSection1'>SEMPRE A SUA DISPOSIÇÃO</h1>
+      <h1 className='FraseSection1'>{frase}</h1>
       <button className='buttonSeta' onClick={handleChangeBackground}>
         
       </button>
