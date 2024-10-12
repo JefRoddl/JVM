@@ -20,6 +20,18 @@
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamanho original */
+  }
+  50% {
+    transform: scale(1.1); /* Aumenta o tamanho para 110% */
+  }
+  100% {
+    transform: scale(1); /* Retorna ao tamanho original */
+  }
+}
+
 
 /* smarthphones */
 
@@ -118,12 +130,20 @@
   }
 
   .buttonSeta {
-    background: transparent;
     border: none;
     position: absolute;
     display: flex;
     margin-top: 1vw;
     margin-left: 75%;
+    height: 8vh;
+    width: 7vh; 
+    background-image: url("./assets/images/seta-direita.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    padding: 0;
+    animation: pulse 1.5s infinite;
+    
   }
 
 }

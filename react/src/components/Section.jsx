@@ -21,7 +21,7 @@ const Section = () => {
     <div className={`${backGroundImage ? 'divSection2' : 'divSection'} ${!isVisible ? 'hidden' : ''}`}>
       <h1 className='FraseSection1'>SEMPRE A SUA DISPOSIÇÃO</h1>
       <button className='buttonSeta' onClick={handleChangeBackground}>
-        <img className='imgIcone' src='../src/assets/images/seta-direita.png' alt='Seta' />
+        
       </button>
     </div>
   );
