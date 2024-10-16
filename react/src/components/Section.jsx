@@ -6,7 +6,7 @@ const Section = () => {
 
   const [isVisible, setIsVisible] = useState(true);
 
-  const [frase, setFrase] = useState("SEMPRE A SUA DISPOSIÇÃO")
+  const [frase, setFrase] = useState("MÃO DE OBRA SOB DEMANDA")
 
   const handleChangeBackground = () => {
     
@@ -15,16 +15,21 @@ const Section = () => {
     
     setTimeout(() => {
       setBackGroundImage(!backGroundImage);
-      setFrase(backGroundImage ? "SEMPRE A SUA DISPOSIÇÃO" : "SERVIÇOS PERSONALIZADOS PARA SUA DEMANDA")
+      setFrase(backGroundImage ? "MÃO DE OBRA SOB DEMANDA" : "SERVIÇOS PERSONALIZADOS PARA VOCÊ")
       setIsVisible(true); 
     }, 700); 
   };
+
+  
 
   return (
     <div className={`${backGroundImage ? 'divSection2' : 'divSection'} ${!isVisible ? 'hidden' : ''}`}>
       <h1 className='FraseSection1'>{frase}</h1>
       <button className='buttonSeta' onClick={handleChangeBackground}>
-        
+      </button>
+
+      <button className='buttonSetaLeft' onClick={handleChangeBackground}>
+
       </button>
     </div>
   );

@@ -39,7 +39,7 @@
   
   body {
     font-size: 14px;
-    padding: 0;
+    padding-top: 12vh;
     margin: 0;
   }
 
@@ -48,14 +48,17 @@
   }
 
   .header {
+    position: fixed; /* Faz com que o header fique fixo na tela */
+    top: 0; /* Fixa o header no topo da página */
+    left: 0;
+    width: 100%; /* Garante que o header cubra a largura total */
     height: 12vh;
     display: flex;
     align-items: center;
-    position: relative; 
-    background-color: rgba(255, 255, 255); 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
-    z-index: 1; 
-    border-radius: 0px 0px 25px 25px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Mantém o header sobre os outros elementos */
+    border-radius: 0px 0px 30px 30px;
   }
 
   .menuIcon {
@@ -142,8 +145,61 @@
     background-repeat: no-repeat;
     background-color: transparent; 
     padding: 0;
-    animation: pulse 1.5s infinite;
-    
+    animation: pulse 1.5s infinite;  
+  }
+
+  .buttonSetaLeft {
+    border: none;
+    position: absolute;
+    display: flex;
+    margin-top: 1vw;
+    margin-right: 75%;
+    height: 8vh;
+    width: 7vh; 
+    background-image: url("./assets/images/seta-esquerda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    padding: 0;
+    animation: pulse 1.5s infinite;  
+  }
+
+  .h1Services {
+    font-family: 'Protest Strike', sans-serif;
+    color: rgb(35, 35, 49);
+    margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .containerServices {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+  }
+
+  .cargaDescarga {
+    /*border: 2px solid red;*/
+    height: 22vh;
+    align-items: center;
+    display: flex;
+  }
+
+  .iconeDescarga {
+    height: 12vh;
+    margin-left: 7vw;
+  }
+
+  .textServiceDescarga {
+    font-family: 'Protest Strike', sans-serif;
+    width: 45vw;
+    color: rgb(35, 35, 49);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    margin-left: 20vw;
   }
 
 }
