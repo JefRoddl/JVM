@@ -198,8 +198,41 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 20vw;
+  }
+
+  .iconeConferente {
+    height: 12vh;
+    margin-left: 15vw;
+  }
+
+  .textServiceConferente {
+    font-family: 'Protest Strike', sans-serif;
+    width: 45vw;
+    color: rgb(35, 35, 49);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 17px;
+    margin-left: 7vw;
+  }
+
+  .conferente {
+    /*border: 2px solid red;*/
+    height: 22vh;
+    align-items: center;
+    display: flex;
+    margin-top: 10vw;
+  }
+
+  .limpeza {
+    /*border: 2px solid red;*/
+    height: 22vh;
+    align-items: center;
+    display: flex;
+    margin-top: 10vw;
   }
 
 }
