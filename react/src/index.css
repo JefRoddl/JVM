@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&display=swap');
 
 @keyframes slideIn {
   from {
@@ -38,15 +40,13 @@
 @media (max-width: 480px) {
   
   body {
-    font-size: 14px;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     padding-top: 11vh;
     margin: 0;
-    font-family: 'Protest Strike', sans-serif;
   }
 
-  .container {
-    
-  }
 
   .header {
     position: fixed; /* Faz com que o header fique fixo na tela */
@@ -114,7 +114,6 @@
 
   .FraseSection1 {
     margin: 0;
-    font-family: 'Protest Strike', sans-serif;
     font-size: 30px;
     color: rgb(255, 255, 255); 
     /*text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.7); */
@@ -166,11 +165,11 @@
   }
 
   .h1Services {
-    font-family: 'Protest Strike', sans-serif;
     color: rgb(35, 35, 49);
     margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5vh;
   }
 
   .containerServices {
@@ -192,15 +191,15 @@
   }
 
   .textServiceDescarga {
-    font-family: 'Protest Strike', sans-serif;
+    font: bold;
     width: 45vw;
     color: rgb(35, 35, 49);
     font-weight: bold;
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 17px;
-    margin-left: 20vw;
+    font-size: 20px;
+    margin-left: 19vw;
   }
 
   .iconeConferente {
@@ -209,14 +208,13 @@
   }
 
   .textServiceConferente {
-    font-family: 'Protest Strike', sans-serif;
     width: 45vw;
     color: rgb(35, 35, 49);
     font-weight: bold;
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 17px;
+    font-size: 20px;
     margin-left: 7vw;
   }
 
@@ -242,20 +240,17 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url('./assets/images/ImagemAbout.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url("./assets/images/imagemAbout2.png");
   }
 
   .h1About {
     position: relative;   
-    z-index: 999;           
-    color: rgb(255, 255, 255); 
+    z-index: 10;           
+    color: rgb(35, 35, 49);
     /*text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.7); */
     text-shadow: 3px 3px black;         
     text-align: center;   
-    font-size: 3rem;      
+    font-size: 4rem;      
     margin-left: auto;
     margin-right: auto;
     margin-top: 13vh;
@@ -267,6 +262,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 7vh;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave */
   }
 
   .alvo {
@@ -279,16 +276,15 @@
     margin-right: auto;
     margin-left: 5vw;
     font-size: 30px;
-    color: rgb(255, 255, 255); 
+    color: rgb(35, 35, 49);
     /*text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.7); */
-    text-shadow: 3px 3px black;
   }
 
   .containerAboutUs p {
-    color: rgb(255, 255, 255); 
+    color: rgb(35, 35, 49);
+    font-weight: bold;
     /*text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.7); */
-    text-shadow: 3px 3px black;
-    font-size: 23px;
+    font-size: 28px;
     width: 80%;
     height: 80%;
     margin-left: auto;
@@ -296,8 +292,15 @@
     text-align: center;
   }
 
-
+  .sectionMission, .missionP {
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave */
+  }
   
+  .sectionMission.slideIn, .missionP.slideIn {
+    opacity: 1; /* Torna-se visível */
+    animation: slideIn 1s forwards; /* Animação de slideIn */
+  }
 
 
 }
