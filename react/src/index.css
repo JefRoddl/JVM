@@ -249,7 +249,7 @@
     margin-top: 12vh;
     position: relative;
     width: 100vw;
-    height: 150vh;
+    height: 180vh;
     overflow: hidden;
     background-image: url("./assets/images/imagemAbout2.png");
   }
@@ -308,14 +308,13 @@
   .sectionMission.slideUp, .missionP.slideUp {
     opacity: 1; 
     animation: slideUp 1s forwards; 
-    transition: opacity 0.5s ease-in-out;
   }
 
   .sectionVision {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7vh;
+    margin-top: 15vh;
     opacity: 0;
   }
 
@@ -336,7 +335,33 @@
   .sectionVision.slideUp, .visionP.slideUp {
     opacity: 1; /* Torna-se visível */
     animation: slideUp 1s forwards; /* Animação de slideIn */
-    transition: opacity 0.5s ease-in-out; /* Transição suave */
+  }
+
+  .sectionValores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    opacity: 0;
+  }
+
+  .unidas {
+    display: flex;
+    height: 9vh;
+    margin-left:22vw;
+  }
+
+  .sectionValores h1 {
+    margin-right: auto;
+    margin-left: 5vw;
+    font-size: 30px;
+    color: rgb(35, 35, 49);
+    /*text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.7); */
+  }
+
+  .sectionValores.slideUp, .valoresP.slideUp {
+    opacity: 1; /* Torna-se visível */
+    animation: slideUp 1s forwards; /* Animação de slideIn */
   }
 
 
