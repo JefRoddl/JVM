@@ -94,7 +94,7 @@ const AboutUs = () => {
         <h1>VALORES</h1>
       </section>
       <p className={`valoresP ${isValoresVisible ? "slideUp" : ""}`}>
-        Nossa visão é liderar o mercado de terceirização de serviços, sendo referência em eficiência, confiabilidade e excelência.
+      valorizamos o compromisso com a qualidade, a responsabilidade em cada serviço e a integridade em todas as nossas ações.
       </p>
     </section>
   );

@@ -4,6 +4,8 @@ import Header from "./components/Header"
 import Section from "./components/Section"
 import OurServices from "./components/OurServices"
 import AboutUs from "./components/AboutUs"
+import Footer from "./components/Footer"
+import Whatsapp from "./components/Whatsapp"
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
       <Section />
       <OurServices />
       <AboutUs />
+      <Whatsapp />
+      <Footer />
     </div>
 
 
