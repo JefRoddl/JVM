@@ -1,7 +1,8 @@
-import React from 'react'
+
 import whatsappIcone from "/src/assets/images/whatsappIcon.png";
 
 const Whatsapp = () => {
+  
   return (
     <a
       href="https://wa.me/5541999283832?text=Olá,%20gostaria%20de%20mais%20informações"

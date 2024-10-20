@@ -22,7 +22,7 @@ const AboutUs = () => {
           missionObserver.disconnect();
         }
       },
-      { threshold: 0.5 } // A seção Missão aparece quando 50% dela está visível
+      { threshold: 0.8 } // A seção Missão aparece quando 50% dela está visível
     );
 
     if (missionRef.current) {
@@ -38,7 +38,7 @@ const AboutUs = () => {
           visionObserver.disconnect();
         }
       },
-      { threshold: 0.5 } // A seção Visão aparece quando 50% dela está visível
+      { threshold: 0.8 } // A seção Visão aparece quando 50% dela está visível
     );
 
     if (visionRef.current) {
@@ -54,7 +54,7 @@ const AboutUs = () => {
           valoresObserver.disconnect();
         }
       },
-      { threshold: 0.5 } // A seção Valores aparece quando 50% dela está visível
+      { threshold: 0.8 } // A seção Valores aparece quando 50% dela está visível
     );
 
     if (valoresRef.current) {
