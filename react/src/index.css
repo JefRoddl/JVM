@@ -426,6 +426,29 @@
     font-size: 110%;
   }
 
+  .DropDownMenuContainer {
+    display: flex;
+    height: 30vh;
+    position: fixed;
+    z-index: 1090;
+    width: 40vw;
+    margin-left:60vw;
+    margin-top: 3.2vh;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 30px 30px;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    
+  }
+
+  .DropDownMenuContainer a {
+    text-decoration: none;
+    margin-top: 3vh;
+  }
+
 
 }
 

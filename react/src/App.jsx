@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs"
 import Footer from "./components/Footer"
 import Whatsapp from "./components/Whatsapp"
 import Portfolio from "./components/Portfolio"
+import DropDownMenu from "./components/DropDownMenu"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="container">
       <Header />
+      <DropDownMenu />
       <Section />
       <OurServices />
       <Portfolio />
