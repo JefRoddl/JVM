@@ -18,7 +18,7 @@ const OurServices = () => {
         </section>
         <section className='limpeza'>
             <img className='iconeDescarga' src={iconeLimpeza} alt="" />
-            <p className='textServiceDescarga'>serviços de limpeza empresarial com equipe treinada e dedicada, garantindo ambientes sempre limpos e organizados</p>
+            <p className='textServiceDescarga'>Serviços de limpeza empresarial com equipe treinada e dedicada, garantindo ambientes sempre limpos e organizados</p>
         </section>
     </div>
   )

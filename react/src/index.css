@@ -242,7 +242,6 @@
   }
 
   .containerAboutUs {
-    margin-top: 12vh;
     position: relative;
     width: 100vw;
     height: 180vh;
@@ -363,7 +362,7 @@
     width: 100vw;
     overflow: hidden;
     position: relative;
-    background-color: blue;
+    background-color: rgb(62, 62, 63);
     color: white;
   }
 
@@ -397,10 +396,35 @@
   .map {
     width: 100%;
   }
-  
 
+  .containerPortfolio {
+    width: 100%;
+    height: 50vh;
+    margin-top: 10vh;
+    display: flex;
+    background-image: url("./assets/images/imgPortfolio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    align-items: center;
+    color: rgb(35, 35, 49);
+  }
 
+  .acessPortfolio {
+    margin-left: 40vw;
+    font-size: 90%;
+    text-decoration: none;
+  }
 
+  .acessPortfolioh2 h2{
+    margin-left: 6vw;
+  }
+
+  .acessPortfolioh2 {
+    text-decoration: none;
+    color: blue;
+    font-size: 110%;
+  }
 
 
 }

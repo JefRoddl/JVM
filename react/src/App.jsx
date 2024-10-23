@@ -6,6 +6,7 @@ import OurServices from "./components/OurServices"
 import AboutUs from "./components/AboutUs"
 import Footer from "./components/Footer"
 import Whatsapp from "./components/Whatsapp"
+import Portfolio from "./components/Portfolio"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Section />
       <OurServices />
+      <Portfolio />
       <AboutUs />
       <Whatsapp />
       <Footer />
