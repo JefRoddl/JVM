@@ -70,7 +70,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className='containerAboutUs'>
+    <section id='sobre' className='containerAboutUs'>
       <h1 className='h1About'>Sobre a JVM</h1>
 
       <section ref={missionRef} className={`sectionMission ${isMissionVisible ? "slideUp" : ""}`}>

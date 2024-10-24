@@ -23,7 +23,7 @@ const Section = () => {
   
 
   return (
-    <div className={`${backGroundImage ? 'divSection2' : 'divSection'} ${!isVisible ? 'hidden' : ''}`}>
+    <div id='inicio' className={`${backGroundImage ? 'divSection2' : 'divSection'} ${!isVisible ? 'hidden' : ''}`}>
       <h1 className='FraseSection1'>{frase}</h1>
       <button className='buttonSeta' onClick={handleChangeBackground}>
       </button>

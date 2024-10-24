@@ -449,7 +449,7 @@
 
   .DropDownMenuContainer {
     display: flex;
-    height: 30vh;
+    height: 32vh;
     position: fixed;
     z-index: 1090;
     width: 40vw;
