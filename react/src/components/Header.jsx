@@ -1,14 +1,16 @@
-import React from 'react'
-import logo from "../assets/images/logo1.png"
-import menu from "../assets/images/cardapio.png"
+import React from 'react';
+import logo from "../assets/images/logo1.png";
+import menu from "../assets/images/cardapio.png";
 
-const Header = () => {
+const Header = ({ handleChange, headerCss }) => {
   return (
-  <header className='header'>
-     <img className='logo' src={logo} alt='logo' />
-     <img className='menuIcon' src={menu} alt="menu" />
-  </header>
-  )
+    <header className={headerCss}>
+      <img className='logo' src={logo} alt='logo' />
+      <button className='buttonMenu' onClick={handleChange}>
+        <img className='menuIcon' src={menu} alt="menu" />
+      </button>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
