@@ -265,10 +265,10 @@
   .containerAboutUs {
     position: relative;
     width: 100vw;
-    height: 180vh;
+    height: 150vh;
     overflow: hidden;
     background-image: url("./assets/images/imagemAbout2.png");
-    min-height: 1400px;
+    min-height: 1000px;
   }
 
   .h1About {
@@ -277,7 +277,7 @@
     color: rgb(35, 35, 49);
     text-shadow: 3px 3px black;         
     text-align: center;   
-    font-size: 3rem;      
+    font-size: 2.5rem;      
     margin-left: auto;
     margin-right: auto;
     margin-top: 13vh;
@@ -294,21 +294,21 @@
 
   .alvo {
     display: flex;
-    height: 9vh;
+    height: 8vh;
     margin-left:22vw;
   }
 
   .sectionMission h1 {
     margin-right: auto;
     margin-left: 5vw;
-    font-size: 30px;
+    font-size: 27px;
     color: rgb(35, 35, 49);
   }
 
   .containerAboutUs p {
     color: rgb(35, 35, 49);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     width: 80%;
     height: 80%;
     margin-left: auto;
@@ -328,7 +328,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 7vh;
     opacity: 0;
   }
 
@@ -341,7 +341,7 @@
   .sectionVision h1 {
     margin-right: auto;
     margin-left: 5vw;
-    font-size: 30px;
+    font-size: 27px;
     color: rgb(35, 35, 49);
     
   }
@@ -355,7 +355,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 7vh;
     opacity: 0;
   }
 
@@ -368,7 +368,7 @@
   .sectionValores h1 {
     margin-right: auto;
     margin-left: 5vw;
-    font-size: 30px;
+    font-size: 27px;
     color: rgb(35, 35, 49);
     
   }
