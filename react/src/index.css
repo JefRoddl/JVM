@@ -423,22 +423,25 @@
     height: 50vh;
     margin-top: 10vh;
     display: flex;
-    background-image: url("./assets/images/imgPortfolio.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: transparent;
     align-items: center;
     color: rgb(35, 35, 49);
   }
 
+  .imgPortfolio {
+    position: absolute;
+    z-index: 0;
+  }
+
   .acessPortfolio {
-    margin-left: 40vw;
-    font-size: 90%;
+    margin-left: 51vw;
+    font-size: 80%;
     text-decoration: none;
+    z-index: 1;
+    margin-bottom: 15vh;
   }
 
   .acessPortfolioh2 h2{
-    margin-left: 6vw;
+    margin-left: 5vw;
   }
 
   .acessPortfolioh2 {
