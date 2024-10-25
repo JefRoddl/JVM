@@ -7,7 +7,7 @@ import iconeLimpeza from "/src/assets/images/iconeLimpeza.png"
 const OurServices = () => {
   return (
     <div id='servicos' className='containerServices'>
-        <h1 className='h1Services'>Conheça nossos serviços</h1>
+        <h1 className='h1Services'>CONHEÇA NOSSOS  SERVIÇOS</h1>
         <section className='cargaDescarga'>
             <img className='iconeDescarga' src={iconeDescarga} alt="" />
             <p className='textServiceDescarga'>Carga e descarga rápida e segura, realizada por profissionais especializados para garantir eficiência no processo</p>

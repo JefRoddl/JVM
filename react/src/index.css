@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @keyframes slideIn {
   from {
@@ -46,13 +47,163 @@
 }
 
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 11vh;
+  margin: 0;
+}
+
+
+.header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90%; 
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999; 
+  border-radius: 0px 0px 40px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menuIcon {
+  display: none;
+}
+
+.buttonMenu {
+  display: none;
+}
+
+.logo {
+  margin-left: 5vw;
+  width: 6vw;
+  height: 10vh;
+}
+
+.divSection {
+  background-image: url("./assets/images/imagemFundo1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  margin-top: -200px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out; 
+}
+
+.divSection2 {
+  background-image: url("./assets/images/imagemFundo2.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  margin-top: -200px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out; 
+}
+
+.hidden {
+  opacity: 0; 
+}
+
+.FraseSection1 {
+  margin: 0;
+  font-size: 60px;
+  color: rgb(255, 255, 255); 
+  text-shadow: 3px 3px black;
+  display: flex;               
+  flex-direction: column;      
+  justify-content: center;     
+  align-items: center; 
+  text-align: center;          
+  position: relative;
+  animation: slideIn 3s forwards;
+  width: 250px;
+}
+
+.imgIcone {
+  height: 7vh;
+}
+
+.buttonSeta {
+  border: none;
+  position: absolute;
+  display: flex;
+  margin-top: 1vw;
+  margin-left: 50%;
+  height: 10vh;
+  width: 9vh; 
+  background-image: url("./assets/images/seta-direita.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent; 
+  padding: 0;
+  animation: pulse 1.5s infinite;  
+}
+
+.buttonSetaLeft {
+  border: none;
+  position: absolute;
+  display: flex;
+  margin-top: 1vw;
+  margin-right: 50%;
+  height: 10vh;
+  width: 9vh; 
+  background-image: url("./assets/images/seta-esquerda.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent; 
+  padding: 0;
+  animation: pulse 1.5s infinite;  
+}
+
+.h1Services {
+  color: rgb(35, 35, 49);
+  width: 100%;
+  margin-top: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
+.containerServices {
+  display: flex;
+  height: 90vh;
+}
+
+
+
+
+
+
+
+
+
+
 /* smarthphones */
 
 @media (max-width: 480px) {
   
   body {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     font-style: normal;
     padding-top: 11vh;
     margin: 0;
@@ -64,7 +215,7 @@
     top: 0; 
     left: 0;
     width: 100%; 
-    height: 12vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255);
@@ -73,12 +224,14 @@
     border-radius: 0px 0px 30px 30px;
   }
 
+  
+
   .headerNew {
     position: fixed; 
     top: 0; 
     left: 0;
     width: 100%; 
-    height: 12vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     background-color: rgba(255, 255, 255);
@@ -92,6 +245,7 @@
     margin-right: 10vw;
     width: 14vw;
     height: 6.5vh;
+    display: block;
   }
 
   .buttonMenu {
@@ -99,12 +253,13 @@
     border: none;
     background-color: white;
     margin-left: auto;
+    display: block;
   }
 
   .logo {
-    margin-left: 5vw;
-    width: 18vw;
-    height: 10vh;
+    margin-left: 7vw;
+    width: 16vw;
+    height: 8vh;
     max-height: 65px;
   }
 
@@ -115,7 +270,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 50vh;
-    margin-top: -20px;
+    margin-top: -40px;
     z-index: 0;
     display: flex;
     align-items: center;
@@ -131,7 +286,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 50vh;
-    margin-top: -20px;
+    margin-top: -40px;
     z-index: 0;
     display: flex;
     align-items: center;
@@ -146,7 +301,7 @@
 
   .FraseSection1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(255, 255, 255); 
     text-shadow: 3px 3px black;
     display: flex;               
@@ -198,9 +353,10 @@
   .h1Services {
     color: rgb(35, 35, 49);
     margin-top: 8vh;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 5vh;
+    font-size: 25px;
+    text-align: center; 
+    width: 100%;
   }
 
   .containerServices {
@@ -228,7 +384,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 19vw;
   }
 
@@ -244,7 +400,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 7vw;
   }
 
@@ -273,8 +429,7 @@
   .h1About {
     position: relative;   
     z-index: 10;           
-    color: rgb(35, 35, 49);
-    text-shadow: 3px 3px black;         
+    color: rgb(35, 35, 49);       
     text-align: center;   
     font-size: 2.5rem;      
     margin-left: auto;
@@ -307,7 +462,7 @@
   .containerAboutUs p {
     color: rgb(35, 35, 49);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
     width: 80%;
     height: 80%;
     margin-left: auto;
@@ -429,8 +584,8 @@
     color: rgb(35, 35, 49);
     justify-content: end;
     position: relative;
-  overflow: hidden;
-  min-height: 300px;
+    overflow: hidden;
+    min-height: 450px;
   }
 
   .imgPortfolio {
@@ -440,11 +595,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    min-height: 300px;
+    min-height: 350px;
   }
 
   .acessPortfolio {
-    font-size: 70%;
+    font-size: 55%;
     text-decoration: none;
     z-index: 1;
     margin-bottom: 18vh;
@@ -468,19 +623,19 @@
     z-index: 1090;
     width: 40vw;
     margin-left:60vw;
-    margin-top: 3.2vh;
+    margin-top: 4.5vh;
     background-color: rgba(255, 255, 255);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 0px 0px 30px 30px;
     flex-direction: column;
-    font-size: 3vh;
+    font-size: 2.7vh;
     align-items: center;
     font-weight: bold;
   }
 
   .DropDownMenuContainer a {
     text-decoration: none;
-    margin-top: 4vh;
+    margin-top: 2.7vh;
     color: rgb(35, 35, 49);
   }
 
