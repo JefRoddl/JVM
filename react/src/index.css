@@ -265,10 +265,9 @@
   .containerAboutUs {
     position: relative;
     width: 100vw;
-    height: 150vh;
+    height: 140vh;
     overflow: hidden;
     background-image: url("./assets/images/imagemAbout2.png");
-    min-height: 1000px;
   }
 
   .h1About {
@@ -288,7 +287,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7vh;
+    margin-top: 8vh;
     opacity: 0;
   }
 
@@ -322,13 +321,14 @@
   .sectionMission.slideUp, .missionP.slideUp {
     opacity: 1; 
     animation: slideUp 1s forwards; 
+    height: 12vh;
   }
 
   .sectionVision {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7vh;
+    margin-top: 8vh;
     opacity: 0;
   }
 
@@ -349,14 +349,16 @@
   .sectionVision.slideUp, .visionP.slideUp {
     opacity: 1; 
     animation: slideUp 1s forwards; 
+    height: 12vh;
   }
 
   .sectionValores {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 7vh;
+    margin-top: 8vh;
     opacity: 0;
+    margin-bottom: 2vh;
   }
 
   .unidas {
@@ -420,24 +422,33 @@
 
   .containerPortfolio {
     width: 100%;
-    height: 50vh;
-    margin-top: 10vh;
+    height: 44vh;
+    margin-top: 16vh;
     display: flex;
     align-items: center;
     color: rgb(35, 35, 49);
+    justify-content: end;
+    position: relative;
+  overflow: hidden;
+  min-height: 300px;
   }
 
   .imgPortfolio {
+    margin-top: 3vh;
     position: absolute;
     z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
   }
 
   .acessPortfolio {
-    margin-left: 51vw;
-    font-size: 80%;
+    font-size: 70%;
     text-decoration: none;
     z-index: 1;
-    margin-bottom: 15vh;
+    margin-bottom: 18vh;
+    margin-right: 4%
   }
 
   .acessPortfolioh2 h2{
@@ -505,7 +516,6 @@
   }
 
   .containerAboutUs {
-    margin-top: 12vh;
     position: relative;
     width: 100vw;
     height: 200vh;
