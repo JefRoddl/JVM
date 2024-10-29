@@ -46,6 +46,7 @@
   }
 }
 
+@media (min-width: 1200px) {
 
 body {
   font-family: "Poppins", sans-serif;
@@ -176,16 +177,115 @@ body {
 
 .h1Services {
   color: rgb(35, 35, 49);
-  width: 100%;
-  margin-top: 8vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  font-size: 25px;
+  text-align: center;     /* Centraliza o texto horizontalmente */
 }
 
 .containerServices {
   display: flex;
-  height: 90vh;
+  flex-direction: column; /* Organiza os elementos em coluna */    /* Centraliza o conteúdo horizontalmente */
+  height: 70vh;
+  padding-top: 2vh;       /* Espaço no topo */
+}
+
+.cargaDescarga {
+  height: 22vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+}
+
+.iconeDescarga {
+  height: 20vh;
+  width: 15vw;
+}
+
+.textServiceDescarga {
+  color: rgb(35, 35, 49);
+  font-weight: bold;
+  display: flex;
+  font-size: 15px;
+  width: 15vw;
+}
+
+.iconeConferente {
+  height: 22vh;
+  width: 15vw;
+}
+
+.textServiceConferente {
+  color: rgb(35, 35, 49);
+  font-weight: bold;
+  display: flex;
+  font-size: 15px;
+  width: 15vw;
+}
+
+.conferente {
+  height: 22vh;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.limpeza {
+  height: 22vh;
+  align-items: center;
+  display: flex;
+  margin-top: 20vh;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 75%;
+}
+
+.containerPortfolio {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: rgb(35, 35, 49);
+  justify-content: end;
+  position: relative;
+  overflow: hidden;
+  min-height: 450px;
+}
+
+.imgPortfolio {
+  display: none;
+}
+
+.imgPortfolio2 {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.acessPortfolio {
+  font-size: 80%;
+  text-decoration: none;
+  z-index: 1;
+  margin-bottom: 18vh;
+  margin-right: 38%;
+  position: absolute;
+  text-align: center;
+
+}
+
+.acessPortfolioh2 h2{
+  margin-left: 0;
+  font-size: 270%;
+}
+
+.acessPortfolioh2 {
+  text-decoration: none;
+  color: blue;
+  
+}
+
 }
 
 
@@ -596,6 +696,17 @@ body {
     height: 100%;
     object-fit: cover;
     min-height: 350px;
+  }
+
+  .imgPortfolio2 {
+    margin-top: 3vh;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 350px;
+    display: none;
   }
 
   .acessPortfolio {
