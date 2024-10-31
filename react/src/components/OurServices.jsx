@@ -6,7 +6,7 @@ import iconeLimpeza from "/src/assets/images/iconeLimpeza.png"
 
 const OurServices = () => {
   return (
-    <div id='servicos' className='containerServices'>
+    <div id='' className='containerServices'>
         <h1 className='h1Services'>CONHEÇA NOSSOS  SERVIÇOS</h1>
         <section className='cargaDescarga'>
             <img className='iconeDescarga' src={iconeDescarga} alt="" />

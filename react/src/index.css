@@ -544,9 +544,11 @@ body {
     height: 190vh;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .cards {
+    position: relative;
     display: flex;
     width: 80%;
     height: 185vh;
@@ -558,21 +560,54 @@ body {
   .h1NossosServiços {
     color: rgb(35, 35, 49);       
     text-align: center;   
-    font-size: 2.5rem; 
+    font-size: 2rem;
+    margin-top: 5vh;
   }
 
   .card {
     position: relative;
-    border-radius: 3px;
+    border-radius: 5px;
     width: 80%;
-    height: 50vh;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .cardBack {
+    position: absolute;
+    border-radius: 5px;
+    width: 73%;
+    height: 30vh;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background-color: blue;
+    margin-left: -6vw;
+    margin-top: 13vh;
+    z-index: -1;
+  }
+
+  .cardBackRight {
+    position: absolute;
+    border-radius: 5px;
+    width: 73%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: blue;
+    margin-left: 24vw;
+    margin-top: 13vh;
+    z-index: -1;
   }
 
   .cardOne {
@@ -580,13 +615,21 @@ body {
   }
 
   .cardTwo {
-    
+    background-image: url("./assets/images/conferencia.png");
   }
 
   .cardThree {
-    
+    background-image: url("./assets/images/limpeza.png");
   }
 
+  .cardContent {
+    display: flex;
+    font-size: 1.2em;
+    color: rgb(35, 35, 49); 
+    margin-top: -8vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .containerAboutUs {
     position: relative;
@@ -755,6 +798,7 @@ body {
     position: relative;
     overflow: hidden;
     min-height: 450px;
+    margin-top: 5vh;
   }
 
   .imgPortfolio {
