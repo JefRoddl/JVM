@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Whatsapp from "./components/Whatsapp";
 import Portfolio from "./components/Portfolio";
 import DropDownMenu from "./components/DropDownMenu";
+import OurServicesNew from "./components/OurServicesNew";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +28,7 @@ function App() {
       <Header handleChange={handleChange} headerCss={headerCss} />
       {isVisible && <DropDownMenu />}
       <Section />
-      <OurServices />
+      <OurServicesNew />
       <Portfolio />
       <AboutUs />
       <Whatsapp />
