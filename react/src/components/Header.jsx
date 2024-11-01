@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/images/logo1.png";
+import logo from "../assets/images/newLogo.png";
 import menu from "../assets/images/cardapio.png";
 
 const Header = ({ handleChange, headerCss }) => {

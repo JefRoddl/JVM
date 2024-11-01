@@ -62,7 +62,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  width: 90%; 
+  width: 70%; 
   height: 12vh;
   display: flex;
   align-items: center;
@@ -83,8 +83,8 @@ body {
 }
 
 .logo {
-  margin-left: 5vw;
-  width: 6vw;
+  margin-left: 6vw;
+  width: 10vw;
   height: 10vh;
 }
 
@@ -175,6 +175,111 @@ body {
   animation: pulse 1.5s infinite;  
 }
 
+.ContainerOurServices {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 50vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25vh;
+}
+
+.h1NossosServiços {
+  position: absolute;
+  color: rgb(35, 35, 49);       
+  text-align: center;   
+  font-size: 2rem;
+  margin-top: 5vh;
+  height: 5vh;
+}
+
+.card {
+  position: relative;
+  border-radius: 5px;
+  width: 30%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cardOne {
+  background-image: url("./assets/images/carga-e-descarga.png");
+  
+}
+
+.cardTwo {
+  background-image: url("./assets/images/conferencia.png");
+  
+}
+
+.cardThree {
+  background-image: url("./assets/images/limpeza.png");
+  
+}
+
+.cardBack {
+  position: absolute;
+  border-radius: 5px;
+  width: 53%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: blue;
+  margin-left: -1vw;
+  margin-top: 22vh;
+  z-index: -1;
+}
+
+.cardBackRight {
+  position: absolute;
+  border-radius: 5px;
+  width: 53%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: blue;
+  margin-left: 25vw;
+  margin-top: 22vh;
+  z-index: -1;
+}
+
+.cardThree .cardBack {
+  display: none;
+}
+
+.cardContent {
+  display: flex;
+  font-size: 1.2em;
+  color: rgb(35, 35, 49); 
+  margin-top: -8vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 /*.h1Services {
   color: rgb(35, 35, 49);
   margin-top: 10vh;
@@ -247,13 +352,6 @@ body {
 
 */
 
-.ContainerOurServices {
-  padding: 0;
-  margin: 0;
-  width: 100vw;
-  height: 80vh;
-  border: 2px solid  red;
-}
 
 .containerPortfolio {
   width: 100%;
@@ -373,8 +471,8 @@ body {
 
   .logo {
     margin-left: 7vw;
-    width: 16vw;
-    height: 8vh;
+    width: 20vw;
+    height: 6vh;
     max-height: 65px;
   }
 
@@ -541,7 +639,7 @@ body {
     padding: 0;
     margin: 0;
     width: 100vw;
-    height: 190vh;
+    height: 160vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -551,7 +649,7 @@ body {
     position: relative;
     display: flex;
     width: 80%;
-    height: 185vh;
+    height: 150vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -562,16 +660,16 @@ body {
     text-align: center;   
     font-size: 2rem;
     margin-top: 5vh;
+    height: 5vh;
   }
 
   .card {
     position: relative;
     border-radius: 5px;
-    width: 80%;
-    height: 40vh;
+    width: 70%;
+    height: 30vh;
     background-size: cover;
     background-position: center;
-
     display: flex;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   }
@@ -579,7 +677,7 @@ body {
   .cardBack {
     position: absolute;
     border-radius: 5px;
-    width: 73%;
+    width: 63%;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -589,14 +687,14 @@ body {
     overflow: hidden;
     background-color: blue;
     margin-left: -6vw;
-    margin-top: 13vh;
+    margin-top: 3vh;
     z-index: -1;
   }
 
   .cardBackRight {
     position: absolute;
     border-radius: 5px;
-    width: 73%;
+    width: 63%;
     height: 30vh;
     background-size: cover;
     background-position: center;
@@ -605,8 +703,8 @@ body {
     justify-content: center;
     overflow: hidden;
     background-color: blue;
-    margin-left: 24vw;
-    margin-top: 13vh;
+    margin-left: 27vw;
+    margin-top: 3vh;
     z-index: -1;
   }
 
