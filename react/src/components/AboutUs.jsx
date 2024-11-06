@@ -71,31 +71,33 @@ const AboutUs = () => {
 
   return (
     <section id='sobre' className='containerAboutUs'>
-      <h1 className='h1About'>Sobre a JVM</h1>
+        
+          <h1 className='h1About'>Sobre a JVM</h1>
 
-      <section ref={missionRef} className={`sectionMission ${isMissionVisible ? "slideUp" : ""}`}>
-        <img src={alvo} alt="" className='alvo' />
-        <h1>MISSÃO</h1>
-      </section>
-      <p className={`missionP ${isMissionVisible ? "slideUp" : ""}`}>
-        A missão da JVM é fornecer serviços de mão de obra especializada com excelência, garantindo agilidade, segurança e eficiência em cada operação.
-      </p>
+          <section ref={missionRef} className={`sectionMission ${isMissionVisible ? "slideUp" : ""}`}>
+            <img src={alvo} alt="" className='alvo' />
+            <h1>MISSÃO</h1>
+          </section>
+          <p className={`missionP ${isMissionVisible ? "slideUp" : ""}`}>
+            A missão da JVM é fornecer serviços de mão de obra especializada com excelência, garantindo agilidade, segurança e eficiência em cada operação.
+          </p>
 
-      <section ref={visionRef} className={`sectionVision ${isVisionVisible ? "slideUp" : ""}`}>
-        <img src={lampada} alt="" className='lampada' />
-        <h1>VISÃO</h1>
-      </section>
-      <p className={`visionP ${isVisionVisible ? "slideUp" : ""}`}>
-        Nossa visão é liderar o mercado de terceirização de serviços, sendo referência em eficiência, confiabilidade e excelência.
-      </p>
+          <section ref={visionRef} className={`sectionVision ${isVisionVisible ? "slideUp" : ""}`}>
+            <img src={lampada} alt="" className='lampada' />
+            <h1>VISÃO</h1>
+          </section>
+          <p className={`visionP ${isVisionVisible ? "slideUp" : ""}`}>
+            Nossa visão é liderar o mercado de terceirização de serviços, sendo referência em eficiência, confiabilidade e excelência.
+          </p>
 
-      <section ref={valoresRef} className={`sectionValores ${isValoresVisible ? "slideUp" : ""}`}>
-        <img src={unidas} alt="" className='unidas' />
-        <h1>VALORES</h1>
-      </section>
-      <p className={`valoresP ${isValoresVisible ? "slideUp" : ""}`}>
-      valorizamos o compromisso com a qualidade, a responsabilidade em cada serviço e a integridade em todas as nossas ações.
-      </p>
+          <section ref={valoresRef} className={`sectionValores ${isValoresVisible ? "slideUp" : ""}`}>
+            <img src={unidas} alt="" className='unidas' />
+            <h1>VALORES</h1>
+          </section>
+          <p className={`valoresP ${isValoresVisible ? "slideUp" : ""}`}>
+          valorizamos o compromisso com a qualidade, a responsabilidade em cada serviço e a integridade em todas as nossas ações.
+          </p>
+        
     </section>
   );
 };
