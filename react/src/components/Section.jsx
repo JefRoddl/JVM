@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, forwardRef } from 'react'
 
-const Section = () => {
+const Section = forwardRef((props, ref) => {
 
   const [backGroundImage, setBackGroundImage] = useState(false)
 
@@ -23,7 +23,7 @@ const Section = () => {
   
 
   return (
-    <div id='inicio' className={`${backGroundImage ? 'divSection2' : 'divSection'} ${!isVisible ? 'hidden' : ''}`}>
+    <div ref={ref} id='inicio' className={`${backGroundImage ? 'divSection2' : 'divSection'} ${!isVisible ? 'hidden' : ''}`}>
       <h1 className='FraseSection1'>{frase}</h1>
       <button className='buttonSeta' onClick={handleChangeBackground}>
       </button>
@@ -33,6 +33,6 @@ const Section = () => {
       </button>
     </div>
   );
-};
+});
 
 export default Section
