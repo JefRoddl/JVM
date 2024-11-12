@@ -66,7 +66,6 @@ body {
   height: 12vh;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   z-index: 999; 
   /*border-radius: 0px 0px 40px 40px;*/
@@ -74,6 +73,7 @@ body {
   margin-right: auto;
   min-height: 65px;
   transition: background-color 0.5s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .headerVisible {
@@ -96,7 +96,6 @@ body {
 }
 
 .servicosHeader {
-  font-size: 17px;
   font-weight: bold;
   margin-left: 30vw;
   text-transform: uppercase;
@@ -112,6 +111,7 @@ body {
   font-weight: bold;
   margin-left: 2vw;
   text-transform: uppercase;
+  
 }
 
 .portfolioHeader:hover {
@@ -120,7 +120,6 @@ body {
 }
 
 .sobreHeader {
-  font-size: 17px;
   font-weight: bold;
   margin-left: 2vw;
   text-transform: uppercase;
@@ -179,7 +178,7 @@ body {
 }
 
 .divSection2 {
-  background-image: url("./assets/images/imagemFundo2.jpg"); 
+  background-image: url("./assets/images/imagemFundo3.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -590,7 +589,7 @@ body {
 }
 
 .containerFooter {
-  height: 30vh;
+  height: 37vh;
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -672,6 +671,21 @@ body {
     border-radius: 0px 0px 30px 30px;
   }
 
+  .servicosHeader {
+    display: none;
+  }
+
+  .portfolioHeader {
+    display: none;
+  }
+
+  .sobreHeader {
+    display: none;
+  }
+
+  .inicioHeader {
+    display: none;
+  }
   
 
   .headerNew {
@@ -686,6 +700,20 @@ body {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 999; 
     border-radius: 0px 0px 0px 30px;
+  }
+
+  .headerVisible {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    border-radius: 0px 0px 30px 30px;
   }
 
   .menuIcon {
@@ -728,7 +756,7 @@ body {
   }
   
   .divSection2 {
-    background-image: url("./assets/images/imagemFundo2.jpg"); 
+    background-image: url("./assets/images/imagemFundo3.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -749,7 +777,7 @@ body {
 
   .FraseSection1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(255, 255, 255); 
     text-shadow: 3px 3px black;
     display: flex;               
@@ -957,7 +985,7 @@ body {
 
   .cardContent {
     display: flex;
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgb(35, 35, 49); 
     margin-top: -9vh;
     margin-left: auto;
@@ -1216,23 +1244,13 @@ body {
     margin-left: 19vw;
   }
 
-  .textServiceConferente {
-    width: 45vw;
-    color: rgb(35, 35, 49);
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
+  .cardContent {
     display: flex;
-    font-size: 15px;
-    margin-left: 7vw;
-  }
-
-  .containerAboutUs {
-    position: relative;
-    width: 100vw;
-    height: 200vh;
-    overflow: hidden;
-    background-image: url("./assets/images/imagemAbout2.png");
+    font-size: 1em;
+    color: rgb(35, 35, 49); 
+    margin-top: -9vh;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sectionMission h1 {
@@ -1260,17 +1278,761 @@ body {
   .h1About {
     position: relative;   
     z-index: 10;           
-    color: rgb(35, 35, 49);
-    /*text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.7); */
-    text-shadow: 3px 3px black;         
+    color: rgb(35, 35, 49);       
     text-align: center;   
-    font-size: 3rem;      
+    font-size: 2.5rem;      
     margin-left: auto;
     margin-right: auto;
     margin-top: 13vh;
     margin-bottom: 0px;
   }
 
+  .containerAboutUs {
+    position: relative;
+    width: 100vw;
+    height: 160vh;
+    overflow: hidden;
+    background-image: url("./assets/images/imagemAbout2.png");
+  }
+
+  .h1About {
+    position: relative;   
+    z-index: 10;           
+    color: rgb(35, 35, 49);       
+    text-align: center;   
+    font-size: 2.5rem;      
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13vh;
+    margin-bottom: 0px;
+  }
+
+  .sectionMission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8vh;
+    opacity: 0;
+  }
+
+  .alvo {
+    display: flex;
+    height: 8vh;
+    margin-left:22vw;
+  }
+
+  .sectionMission h1 {
+    margin-right: auto;
+    margin-left: 5vw;
+    font-size: 27px;
+    color: rgb(35, 35, 49);
+  }
+
+  .containerAboutUs p {
+    color: rgb(35, 35, 49);
+    font-weight: bold;
+    font-size: 15px;
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    height: 20vh;
+  }
+
+    
+  .sectionMission.slideUp, .missionP.slideUp {
+    opacity: 1; 
+    animation: slideUp 1s forwards; 
+    height: 12vh;
+  }
+
+  .sectionVision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+    opacity: 0;
+  }
+
+  .lampada {
+    display: flex;
+    height: 9vh;
+    margin-left:22vw;
+  }
+
+  .sectionVision h1 {
+    margin-right: auto;
+    margin-left: 5vw;
+    font-size: 27px;
+    color: rgb(35, 35, 49); 
+  }
+
+  .sectionVision.slideUp, .visionP.slideUp {
+    opacity: 1; 
+    animation: slideUp 1s forwards; 
+    height: 12vh;
+  }
+
+  .sectionValores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    opacity: 0;
+    margin-bottom: 2vh;
+  }
+
+  .unidas {
+    display: flex;
+    height: 9vh;
+    margin-left:22vw;
+  }
+
+  .sectionValores h1 {
+    margin-right: auto;
+    margin-left: 5vw;
+    font-size: 27px;
+    color: rgb(35, 35, 49);
+    
+  }
+
+  .sectionValores.slideUp, .valoresP.slideUp {
+    opacity: 1; 
+    animation: slideUp 1s forwards; 
+  }
+
+  .containerPortfolio {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    color: rgb(35, 35, 49);
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+    margin-top: 5vh;
+  }
+
+
+  .acessPortfolio {
+    font-size: 50%;
+    text-decoration: none;
+    z-index: 1;
+    margin-bottom: 18vh;
+    margin-right: 1%
+  }
+
+  .imgPortfolio {
+    margin-top: 3vh;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 350px;
+  }
+
+  .acessPortfolioh2 h2{
+    margin-left: 11vw;
+  }
+
+  .acessPortfolioh2 {
+    text-decoration: none;
+    color: blue;
+    font-size: 90%;
+  }
+
+  .containerFooter {
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(62, 62, 63);
+    color: white;
+  }
+
+}
+
+/* Ajustes para Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 11vh;
+    margin: 0;
+  }
+
+
+  .header {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .headerVisible {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  .servicosHeader {
+    display: none;
+  }
+
+  .portfolioHeader {
+    display: none;
+  }
+
+  .sobreHeader {
+    display: none;
+  }
+
+  .inicioHeader {
+    display: none;
+  }
+  
+
+  .headerNew {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 999; 
+    border-radius: 0px 0px 0px 30px;
+  }
+
+  .menuIcon {
+    margin-left: auto;
+    margin-right: 10vw;
+    width: 11vw;
+    height: 6.5vh;
+    display: block;
+  }
+
+  .buttonMenu {
+    background-image: none;
+    border: none;
+    background-color: white;
+    margin-left: auto;
+    display: block;
+  }
+
+  .logo {
+    margin-left: 7vw;
+    width: 18vw;
+    height: 6vh;
+    max-height: 65px;
+  }
+
+  .divSection {
+    background-image: url("./assets/images/imagemFundo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    margin-top: -40px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  .divSection2 {
+    background-image: url("./assets/images/imagemFundo3.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    margin-top: -40px;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 1s ease-in-out; 
+  }
+  
+  .hidden {
+    opacity: 0; 
+  }
+
+  .FraseSection1 {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(255, 255, 255); 
+    text-shadow: 3px 3px black;
+    display: flex;               
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center; 
+    text-align: center;          
+    position: relative;
+    animation: slideIn 3s forwards;
+    width: 250px;
+  }
+
+  .imgIcone {
+    height: 7vh;
+  }
+
+  .buttonSeta {
+    border: none;
+    position: absolute;
+    display: flex;
+    margin-top: 1vw;
+    margin-left: 75%;
+    height: 8vh;
+    width: 7vh; 
+    background-image: url("./assets/images/seta-direita.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    padding: 0;
+    animation: pulse 1.5s infinite;  
+  }
+
+  .buttonSetaLeft {
+    border: none;
+    position: absolute;
+    display: flex;
+    margin-top: 1vw;
+    margin-right: 75%;
+    height: 8vh;
+    width: 7vh; 
+    background-image: url("./assets/images/seta-esquerda.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    padding: 0;
+    animation: pulse 1.5s infinite;  
+  }
+
+  /*.h1Services {
+    color: rgb(35, 35, 49);
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    font-size: 25px;
+    text-align: center; 
+    width: 100%;
+  }
+
+  /*
+
+ /* .containerServices {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+  }
+
+  .cargaDescarga {
+    height: 22vh;
+    align-items: center;
+    display: flex;
+  }
+
+  .iconeDescarga {
+    height: 12vh;
+    margin-left: 7vw;
+  }
+
+  .textServiceDescarga {
+    font: bold;
+    width: 45vw;
+    color: rgb(35, 35, 49);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    margin-left: 19vw;
+  }
+
+  .iconeConferente {
+    height: 12vh;
+    margin-left: 15vw;
+  }
+
+  .textServiceConferente {
+    width: 45vw;
+    color: rgb(35, 35, 49);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+    margin-left: 7vw;
+  }
+
+  .conferente {
+    height: 22vh;
+    align-items: center;
+    display: flex;
+    margin-top: 8vh;
+  }
+
+  .limpeza {
+    height: 22vh;
+    align-items: center;
+    display: flex;
+    margin-top: 8vh;
+  }
+
+  */
+
+  .ContainerOurServices {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 160vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 150vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .h1NossosServiços {
+    color: rgb(35, 35, 49);       
+    text-align: center;   
+    font-size: 2.5rem;
+    margin-top: 5vh;
+    height: 5vh;
+  }
+
+  .card {
+    position: relative;
+    border-radius: 5px;
+    width: 50%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .cardBack {
+    position: absolute;
+    border-radius: 5px;
+    width: 63%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: blue;
+    margin-left: -4vw;
+    margin-top: 3vh;
+    z-index: -1;
+  }
+
+  .cardBackRight {
+    position: absolute;
+    border-radius: 5px;
+    width: 63%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: blue;
+    margin-left: 20vw;
+    margin-top: 3vh;
+    z-index: -1;
+  }
+
+  .cardOne {
+    background-image: url("./assets/images/carga-e-descarga.png");
+  }
+
+  .cardTwo {
+    background-image: url("./assets/images/conferencia.png");
+  }
+
+  .cardThree {
+    background-image: url("./assets/images/limpeza.png");
+  }
+
+  .cardContent {
+    display: flex;
+    font-size: 1.6em;
+    color: rgb(35, 35, 49); 
+    margin-top: -9vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .containerAboutUs {
+    position: relative;
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+    background-image: url("./assets/images/imagemAbout2.png");
+  }
+
+  .h1About {
+    position: relative;   
+    z-index: 10;           
+    color: rgb(35, 35, 49);       
+    text-align: center;   
+    font-size: 2.5rem;      
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9vh;
+    margin-bottom: 0px;
+  }
+
+  .sectionMission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    opacity: 0;
+  }
+
+  .alvo {
+    display: flex;
+    height: 8vh;
+    margin-left:auto;
+  }
+
+  .sectionMission h1 {
+    margin-right: auto;
+    margin-left: 5vw;
+    font-size: 27px;
+    color: rgb(35, 35, 49);
+  }
+
+  .containerAboutUs p {
+    color: rgb(35, 35, 49);
+    font-weight: bold;
+    font-size: 20px;
+    width: 60%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    height: 20vh;
+  }
+
+    
+  .sectionMission.slideUp, .missionP.slideUp {
+    opacity: 1; 
+    animation: slideUp 1s forwards; 
+    height: 12vh;
+  }
+
+  .sectionVision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    opacity: 0;
+  }
+
+  .lampada {
+    display: flex;
+    height: 9vh;
+    margin-left:auto;
+  }
+
+  .sectionVision h1 {
+    margin-right: auto;
+    margin-left: 5vw;
+    font-size: 27px;
+    color: rgb(35, 35, 49); 
+  }
+
+  .sectionVision.slideUp, .visionP.slideUp {
+    opacity: 1; 
+    animation: slideUp 1s forwards; 
+    height: 12vh;
+  }
+
+  .sectionValores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    opacity: 0;
+    margin-bottom: 2vh;
+  }
+
+  .unidas {
+    display: flex;
+    height: 9vh;
+    margin-left:auto;
+  }
+
+  .sectionValores h1 {
+    margin-right: auto;
+    margin-left: 5vw;
+    font-size: 27px;
+    color: rgb(35, 35, 49);
+    
+  }
+
+  .sectionValores.slideUp, .valoresP.slideUp {
+    opacity: 1; 
+    animation: slideUp 1s forwards; 
+  }
+
+  .containerFooter {
+    height: 50vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(62, 62, 63);
+    color: white;
+  }
+
+  .whatsapp_float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    z-index: 1000;
+  }
+  
+  .whatsapp-icon {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out; 
+    animation: pulse 1.5s infinite;
+
+  }
+
+  .h2OndeEstamos {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .maps {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .containerPortfolio {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: rgb(35, 35, 49);
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    min-height: 450px;
+    margin-top: 5vh;
+  }
+
+  .imgPortfolio {
+    margin-top: 3vh;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 350px;
+  }
+
+  .imgPortfolio2 {
+    margin-top: 3vh;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 350px;
+    display: none;
+  }
+
+  .acessPortfolio {
+    font-size: 76%;
+    text-decoration: none;
+    z-index: 1;
+    margin-bottom: 18vh;
+    margin-right: 17%
+  }
+
+  .acessPortfolioh2 h2{
+    margin-left: 5vw;
+  }
+
+  .acessPortfolioh2 {
+    text-decoration: none;
+    color: blue;
+    font-size: 110%;
+  }
+
+  .DropDownMenuContainer {
+    display: flex;
+    height: 32vh;
+    position: fixed;
+    z-index: 1090;
+    width: 40vw;
+    margin-left:60vw;
+    margin-top: 2.5vh;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 30px 30px;
+    flex-direction: column;
+    font-size: 2vh;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .DropDownMenuContainer a {
+    text-decoration: none;
+    margin-top: 2.7vh;
+    color: rgb(35, 35, 49);
+  }
 }
 
 /* -------------  --------------- */
