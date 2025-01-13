@@ -20,4 +20,3 @@
   
 ![Uploading screencapture-localhost-5173-2025-01-13-16_17_31.png…]()
 
-![Uploading iPhone-13-PRO-localhost (2).png…]()
