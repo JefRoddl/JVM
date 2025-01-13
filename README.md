@@ -18,6 +18,9 @@
 - Design responsivo adaptado para diferentes dispositivos.
 
 ##
-![Uploading screencapture-localhost-5173-2025-01-13-16_17_31.png…]()
+![screencapture-localhost-5173-2025-01-13-16_17_31](https://github.com/user-attachments/assets/b4990a61-72fe-48c3-8da7-92f23928a9fe)
+##
+![iPhone-13-PRO-localhost (2)](https://github.com/user-attachments/assets/60bf306e-8ab8-4edd-a09e-ec8570934378)
+
 
 
